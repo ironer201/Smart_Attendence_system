@@ -106,23 +106,13 @@ lastbtn.addEventListener('click', async () => {
     }
 });
 
-//Supabase
-// script.js
-
-// Load Supabase SDK from CDN
-(async () => {
-  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm')
-
-  const supabase = createClient(
-    'https://xlkqbzboihjluglxxech.supabase.co',
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhsa3FiemJvaWhqbHVnbHh4ZWNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4NjM3NjIsImV4cCI6MjA2ODQzOTc2Mn0.lkqWSoBUztCg75cUsKnh5XWV7evpPdfy1v82eUSFfRU'
-  )
-
-  // Example: Fetch data from your Supabase table (change 'users' to your actual table name)
-  const { data, error } = await supabase.from('data').select('*')
-  if (error) {
-    console.error('Error:', error)
-  } else {
-    console.log('Data from Supabase:', data)
-  }
-})()
+// Added: Check all checkboxes when checkall button is pressed
+checkall.addEventListener('click', () => {
+    const rows = tbody.getElementsByTagName('tr');
+    Array.from(rows).forEach(row => {
+        const checkbox = row.cells[2].querySelector('input');
+        if (checkbox) {
+            checkbox.checked = true; // Set all checkboxes to checked
+        }
+    });
+});
