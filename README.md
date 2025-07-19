@@ -12,3 +12,7 @@ We take the name and ID from the user so that it remain hassle free for the deve
 
 limitation: 
 If there are 3-4 missing ID then it will take 1 minutes to do it because it can take only one number for finding absent and present student
+
+Language & Framework: HTML, CSS, Javascript & NodeJS
+Database: Postgresql
+OS: Fedora 42 Workstation
