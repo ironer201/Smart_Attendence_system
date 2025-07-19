@@ -105,3 +105,26 @@ lastbtn.addEventListener('click', async () => {
         console.error('Error updating checklist:', error);
     }
 });
+
+//Supabase
+// script.js
+
+// Load Supabase SDK from CDN
+import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm').then(({ createClient }) => {
+  const supabaseUrl = 'https://xlkqbzboihjluglxxech.supabase.co' // replace with your Supabase project URL
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhsa3FiemJvaWhqbHVnbHh4ZWNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4NjM3NjIsImV4cCI6MjA2ODQzOTc2Mn0.lkqWSoBUztCg75cUsKnh5XWV7evpPdfy1v82eUSFfRU' // replace with your anon public key
+
+  const supabase = createClient(supabaseUrl, supabaseKey)
+
+  // Fetch data from a table (example: 'users')
+  supabase
+    .from('users')
+    .select('*')
+    .then(({ data, error }) => {
+      if (error) {
+        console.error('Error fetching data:', error)
+      } else {
+        console.log('Fetched data:', data)
+      }
+    })
+})
