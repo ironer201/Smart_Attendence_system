@@ -1,0 +1,140 @@
+/* style.css */
+
+/* Reset some default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Button */
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1c60c2;
+}
+
+/* Table Container */
+.table {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-height: 60vh;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+thead {
+  background-color: #2f80ed;
+  color: white;
+}
+
+th:nth-child(1) { width: 100px; }
+th:nth-child(2) { width: 200px; }
+th:nth-child(3) { width: 100px; }
+
+/* Status Classes */
+.status-active {
+  color: green;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: red;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Bottom Box */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.box label {
+  font-weight: 500;
+}
+
+.box input[type="number"] {
+  width: 100px;
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Submit button */
+#submit {
+  background-color: #27ae60;
+  width: 120px;
+}
+
+#submit:hover {
+  background-color: #1e874b;
+}
+
+/* the last submit button for checklist */
+.checkbtn {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+
+}

@@ -1,0 +1,107 @@
+ /* Reset and Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+
+        /* Table Container Layout */
+        .table-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Styling */
+        .table-wrapper {
+            flex: 1;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        th:nth-child(1) {
+            width: 40%;
+        }
+        th:nth-child(2) {
+            width: 60%;
+        }
+
+        /* Button Group Styling */
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-width: 120px;
+            position: fixed;
+            right: 200px;
+            top: 20px;
+        }
+
+        .btn-group button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        #add {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #save {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        #edit {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .btn-group button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+input{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  resize: none;
+  outline: none;
+  transition: 0.3 ease;
+}
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button{
+        -webkit-appearance:none;
+    }
