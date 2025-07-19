@@ -145,24 +145,6 @@ lastbtn.addEventListener('click', async () => {
         console.error('Error updating checklist:', error);
     }
 });
-//Problem
-// Load Supabase SDK from CDN
-(async () => {
-  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm')
-
-  const supabase = createClient(
-    'https://xlkqbzboihjluglxxech.supabase.co',
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhsa3FiemJvaWhqbHVnbHh4ZWNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI4NjM3NjIsImV4cCI6MjA2ODQzOTc2Mn0.lkqWSoBUztCg75cUsKnh5XWV7evpPdfy1v82eUSFfRU'
-  )
-
-  // Example: Fetch data from your Supabase table (change 'users' to your actual table name)
-  const { data, error } = await supabase.from('data').select('*')
-  if (error) {
-    console.error('Error:', error)
-  } else {
-    console.log('Data from Supabase:', data)
-  }
-})()
 
 
 
