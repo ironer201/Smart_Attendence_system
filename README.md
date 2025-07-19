@@ -1,4 +1,4 @@
-#A smart attendance system. 
+A smart attendance system. 
 
 Suppose there are 60 students and only one or two are absent—like ID 26 or 36 the teacher has to carefully scan the entire list to find who’s missing. This becomes even more difficult if the absent student’s name is somewhere in the middle of the list. On the other hand, in a nearly empty classroom with just a few students present, the teacher still has to go through the full list to mark absentees.Now we measurement the time we can see that it take 10 minutes to take attendance and then starting to prepare the study it also take time so we can say taking attendance is taking lot of time. So I have create a smart way to avoid this problem. 
  
