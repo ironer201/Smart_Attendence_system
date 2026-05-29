@@ -1,18 +1,46 @@
-A smart attendance system. 
+# IMS — Information Management System for BAUET
 
-Suppose there are 60 students and only one or two are absent—like ID 26 or 36 the teacher has to carefully scan the entire list to find who’s missing. This becomes even more difficult if the absent student’s name is somewhere in the middle of the list. On the other hand, in a nearly empty classroom with just a few students present, the teacher still has to go through the full list to mark absentees.Now we measurement the time we can see that it take 10 minutes to take attendance and then starting to prepare the study it also take time so we can say taking attendance is taking lot of time. So I have create a smart way to avoid this problem. 
- 
-Solution: 
-by default every checklist is false mean unchecked so when all student is present I can press checkall button and all check listed and then I will put the id in the absent textbox and submit and the database is updated. The teacher can save up to 10 minutes if the system by default come checked or unchecked depending on present of the student it may saves 2-5 minutes time but The teacher can focus on studying and the teacher's attention will not be lost.
+An Android app built for **Bangladesh Army University of Engineering & Technology (BAUET)** to help Class Representatives (CRs) and the Head of Department (HOD) manage student data efficiently — replacing scattered messaging apps with a structured system.
 
-Bugs: When name and id is given input and we take attendance then we edit the name or ID. the status is wipe out from the database but the name and ID stays same.
+## Features
 
-Explaination: 
-We take the name and ID from the user so that it remain hassle free for the developer & don't need developer all the time to update data all time. After the data is submitted the data is fetch to attendance list so that I can take the attendance. Since the table is unchecked I can press the checked button and  press the submit button and the work will be done.
+- **Role-based login** — Separate dashboards for students/CRs and HOD/authority users
+- **Attendance tracking** — Mark daily attendance per course with a dynamic student checklist
+- **Assignment upload** — Capture or pick images and upload them to Firebase as Base64
+- **Class test counter** — Track how many tests have been conducted per course
+- **Absence reporting** — Log absences with course code, student ID, and reason
+- **Student list manager** — Dynamically add/remove students with ID and name
+- **Data persistence** — Local storage via SharedPreferences + Firebase Realtime Database
 
-limitation: 
-If there are 3-4 missing ID then it will take 1 minutes to do it because it can take only one number for finding absent and present student
+## Tech Stack
 
-Language & Framework: HTML, CSS, Javascript & NodeJS
-Database: Postgresql
-OS: Fedora 42 Workstation
+- **Language** — Java (Android)
+- **Storage** — SharedPreferences (local), Firebase Realtime Database, Firebase Storage
+- **UI** — Material 3, CardView, AppCompat
+- **Build** — Gradle (APK included)
+
+## Project Structure
+
+```
+src/main/java/com/app/testlogin/
+├── MainActivity.java       # Login screen
+├── page.java               # Student/CR dashboard
+├── autormain.java          # Authority/HOD dashboard
+├── attendence.java         # Mark attendance
+├── attenden_list.java      # View attendance records
+├── Assignment.java         # Upload assignment images
+├── static_asi.java         # Assignment submission status
+├── CT.java                 # Class test counter
+├── absent.java             # Submit absence reason
+├── absentlist.java         # View absence records
+├── list.java               # Manage student list
+├── chatbox.java            # Chat interface (placeholder)
+├── threedays.java          # 3-day absent list (placeholder)
+└── AppCompatActivity.java  # Custom stub class
+```
+
+## Credits
+
+- **Developer** — Md. Zarif Noor (ironer201)
+- **Designer** — Jannatul Naima Moon
+- **Contributor** — Jihad Hasan Jwel (CT logic)
