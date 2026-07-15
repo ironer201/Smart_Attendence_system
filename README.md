@@ -184,21 +184,6 @@ Smart_Attendence_system/
 - [ ] Docker Compose for one-command local setup
 
 ---
-
-## 👤 About Me
-
-**ironer201**
-
-I'm a developer who enjoys building complete, working systems from database to browser — not just isolated snippets. This project reflects how I approach a problem: understand the real-world workflow first, then design the schema, API, and UI to match it.
-
-- GitHub: [@ironer201](https://github.com/ironer201)
-- Email: your.email@example.com
-- LinkedIn: *(add your link here)*
-
-**Open to opportunities in full-stack / backend development.** Feel free to reach out — happy to walk through the code, design decisions, or extend this project further.
-
----
-
 ## 📄 License
 
 MIT — see [LICENSE](LICENSE) for details.
