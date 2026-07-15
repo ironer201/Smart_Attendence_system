@@ -6,7 +6,6 @@ A full-stack attendance management platform built with **Node.js**, **Express**,
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
@@ -182,12 +181,6 @@ Smart_Attendence_system/
 - [ ] Search and filter by student/date
 - [ ] Automated test suite (Jest/Supertest)
 - [ ] Docker Compose for one-command local setup
-
----
-## 📄 License
-
-MIT — see [LICENSE](LICENSE) for details.
-
 ---
 
 <div align="center">
